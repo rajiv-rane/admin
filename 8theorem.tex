@@ -1,0 +1,38 @@
+% Develop a LaTeX script to demonstrate the presentation of Numbered theorems, definitions, corollaries,
+% and lemmas in the document
+
+\documentclass{article}
+\usepackage[english]{babel}
+% \usepackage{gensymb} % For the degree symbol
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+
+\begin{document}
+
+\section{Introduction}
+Theorems can be easily defined:
+\begin{theorem}
+Let \(f\) be a function whose derivative exists in every point, then \(f\) is a continuous function.
+\end{theorem}
+
+\begin{theorem}[Pythagorean theorem]
+\label{pythagorean}
+This is a theorem about right triangles and can be summarized in the next equation:
+\[ x^2 + y^2 = z^2 \]
+\end{theorem}
+
+And a sequence of Theorem \ref{pythagorean} is the statement in the next corollary.
+
+\begin{corollary}
+There's no right triangle whose sides measure 3 cm, 4 cm, and 6 cm.
+\end{corollary}
+
+You can reference theorems such as Theorem \ref{pythagorean} when a label is assigned.
+
+\begin{lemma}
+Given two line segments whose lengths are \(a\) and \(b\) respectively, there is a real number \(r\) such that \(b = ra\).
+\end{lemma}
+
+\end{document}

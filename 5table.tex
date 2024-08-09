@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{tabularx}
+\begin{document}
+\section*{Student Marks}
+
+\begin{table}
+    \centering
+    \caption{Student Marks Table}
+    \label{student-marks}
+    \begin{tabularx}{\textwidth}{|c|c|X|c|c|c|}
+    \hline
+    Slno & USN & Student name & \multicolumn{3}{c|}{Marks}\\
+    \cline{4-6}
+    &&& subject1 & subject2 & subject3\\
+    \hline
+    1 & 1CR22CS123 & ABCDEF & 10 & 20 & 30\\
+    \hline
+    2 & 1CR22CS123 & ABCDEF & 10 & 20 & 30\\
+    \hline
+    3 & 1CR22CS123 & ABCDEF & 10 & 20 & 30\\
+    \hline
+        
+    \end{tabularx}
+\end{table}
+\end{document}

@@ -1,0 +1,29 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{amsmath,nccmath,amsfonts,amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+\begin{center}
+    \large{\textbf{Equations in \LaTeX}}
+\end{center}
+
+\section*{Equation 1}
+\begin{fleqn}
+\[
+x=\frac{-b \pm \sqrt{b^{2}-4ac}}{2a}
+\]
+\[
+=\frac{-2 \pm \sqrt{2^{2}-4*(1)*(8)}}{2*1}
+\]
+\end{fleqn}
+
+\section*{Equation 2}
+\begin{fleqn}
+\[
+\varphi^{\lambda}_{\sigma}A_{t}=\sum_{\pi \in C_{t}} sgn(\pi)\varphi^{\lambda}_{\sigma}
+\]
+\[
+=\sum_{\tau \in C_{\sigma t}} sgn(\sigma^{-1}\tau\sigma)\varphi^{\lambda}_{\sigma}\varphi^{\lambda}_{\sigma^{-1}\tau\sigma}
+\]
+\end{fleqn}
+\end{document}
